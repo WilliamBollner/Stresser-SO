@@ -25,5 +25,15 @@
             <artifactId>jfreechart</artifactId>
             <version>1.5.3</version>
         </dependency>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>5.15.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jcuda</groupId>
+            <artifactId>jcuda</artifactId>
+            <version>11.6.1</version>
+        </dependency>
     </dependencies>
 </project>

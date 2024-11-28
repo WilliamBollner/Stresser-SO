@@ -37,7 +37,7 @@ public class MemoryPanel extends JPanel {
     }
 
     private void init(GlobalMemory memory) {
-        setLayout(new BorderLayout()); // Configura o layout do MemoryPanel
+        setLayout(new BorderLayout());
 
         DefaultPieDataset<String> physMemData = new DefaultPieDataset<>();
         DefaultPieDataset<String> virtMemData = new DefaultPieDataset<>();

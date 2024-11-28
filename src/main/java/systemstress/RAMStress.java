@@ -20,9 +20,13 @@ public class RAMStress {
 
         long endTime = System.currentTimeMillis() + tempo * 1000;
 
+        outerLoop:
         while (System.currentTimeMillis() < endTime) {
             for (int[] array : arrays) {
                 for (int i = 0; i < array.length; i++) {
+                    if (System.currentTimeMillis() >= endTime) {
+                        break outerLoop; // Sai imediatamente do loop externo
+                    }
                     array[i] = (array[i] + 1) % 256;
                 }
             }
