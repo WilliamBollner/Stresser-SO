@@ -61,12 +61,12 @@ public class GPUStress {
                 .getParentFile()
                 .getAbsolutePath();
 
-// Concatena o caminho dinâmico com o local do arquivo PTX
+        // Concatena o caminho dinâmico com o local do arquivo PTX
         String ptxFileName = Paths.get(projectPath,
                         "src", "main", "java", "systemstress", "cuda", "matrixMultiply.ptx")
                 .toString();
 
-// Verifica se o arquivo PTX existe no caminho calculado
+        // Verifica se o arquivo PTX existe no caminho calculado
         File ptxFile = new File(ptxFileName);
         if (!ptxFile.exists()) {
             System.err.println("Arquivo PTX não encontrado em: " + ptxFileName);
